@@ -1,7 +1,14 @@
+using ContactCenter.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<DB>(opt =>
+{
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("default"));
+});
 
 var app = builder.Build();
 
