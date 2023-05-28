@@ -1,0 +1,829 @@
+﻿@page
+@model ContactCenter.Pages.ContactListModel
+@{
+}
+
+ <div class="container-fluid MainBase">
+        <div class="container" style="margin-top:10px;">
+
+
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                           نیروگاه های خورشیدی
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <table id="TableList" class="table table-striped" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>نام شرکت</th>
+                                        <th>شماره پروانه</th>
+                                        <th>تاریخ صدور</th>
+                                        <th>قدرت نامی (کیلو وات )</th>
+                                        <th>فیدر </th>
+                                        <th>پست فوق توزیع</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>نیروگاه 1</td>
+                                        <td>1400/21/378</td>
+                                        <td>1401/09/06</td>
+                                        <td>4100</td>
+                                        <td>چکاوک</td>
+                                        <td>صنعتی پرند</td>
+                                    </tr>
+                                    <tr>
+                                        <td>نیروگاه 2</td>
+                                        <td>1401/21/6210</td>
+                                        <td>1401/06/21</td>
+                                        <td>4040</td>
+                                        <td>رجا شیمی</td>
+                                        <td>صفادشت</td>
+                                    </tr>
+                                    <tr>
+                                        <td>نیروگاه 3</td>
+                                        <td>1401/21/4284</td>
+                                        <td>1401/05/04</td>
+                                        <td>5844</td>
+                                        <td>رازی</td>
+                                        <td>شمس آباد 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>نیروگاه 4</td>
+                                        <td>1401/21/4283</td>
+                                        <td>1401/05/04</td>
+                                        <td>5844</td>
+                                        <td>آزادی</td>
+                                        <td>شمس آباد 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>نیروگاه 5</td>
+                                        <td>1400/21</td>
+                                        <td>1400/12/22</td>
+                                        <td>6900</td>
+                                        <td>کتالان</td>
+                                        <td>صنعتی فیروزکوه</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            مجوز های صادره خورشیدی
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <table id="TableList2" class="table table-striped" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>ردیف</th>
+                                        <th>مرحله</th>
+                                        <th>توان نامی منصوبه (کیلووات)</tthd>
+                                        <th>نوع انشعاب</th>
+                                        <th>منطقه</th>
+                                        <th>نوع کنتور</th>
+                                        <th>تاریخ نصب کنتور</th>
+                                        <th>شماره قرارداد</th>
+                                        <th>تاریخ دریافت مجوز</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>بهره برداری</td>
+                                        <td>10</td>
+                                        <td>سه فاز</td>
+                                        <td>دماوند</td>
+                                        <td>توس فیوز</td>
+                                        <td>96/6/15</td>
+                                        <td>96/203872</td>
+                                        <td>1396/03/31</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>بهره برداری</td>
+                                        <td>20</td>
+                                        <td>سه فاز</td>
+                                        <td>پردیس</td>
+                                        <td>توس فیوز</td>
+                                        <td>96/7/19</td>
+                                        <td>95/240/18890</td>
+                                        <td>1395/12/10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>بهره برداری</td>
+                                        <td>75</td>
+                                        <td>سه فاز</td>
+                                        <td>چهاردانگه</td>
+                                        <td>افزار آزما</td>
+                                        <td>_</td>
+                                        <td>96/214738</td>
+                                        <td>1396/05/10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>بهره برداری</td>
+                                        <td>19</td>
+                                        <td>سه فاز</td>
+                                        <td>شهریار</td>
+                                        <td>بهینه سازان</td>
+                                        <td>96/08/18</td>
+                                        <td>96/222677</td>
+                                        <td>1396/06/11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>بهره برداری</td>
+                                        <td>20</td>
+                                        <td>سه فاز</td>
+                                        <td>کهریزک</td>
+                                        <td>توس فیوز</td>
+                                        <td>96/9/18</td>
+                                        <td>96/20827</td>
+                                        <td>1396/04/18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>بهره برداری</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>شهریار</td>
+                                        <td>بهینه سازان</td>
+                                        <td>96/11/29</td>
+                                        <td>96/239904</td>
+                                        <td>1396/08/20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>بهره برداری</td>
+                                        <td>3</td>
+                                        <td>تکفاز</td>
+                                        <td>شهریار</td>
+                                        <td>بهینه سازان</td>
+                                        <td>96/11/29</td>
+                                        <td>96/232219</td>
+                                        <td>1396/07/23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>بهره برداری</td>
+                                        <td>20</td>
+                                        <td>سه فاز</td>
+                                        <td>ملارد</td>
+                                        <td>بهینه سازان</td>
+                                        <td>96/12/08</td>
+                                        <td>96/246538</td>
+                                        <td>1396/09/17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>بهره برداری</td>
+                                        <td>20</td>
+                                        <td>سه فاز</td>
+                                        <td>دماوند</td>
+                                        <td>توس فیوز</td>
+                                        <td>96/12/27</td>
+                                        <td>96/217061</td>
+                                        <td>1396/05/18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>بهره برداری</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>لواسان</td>
+                                        <td>بهینه سازان</td>
+                                        <td>97/01/26</td>
+                                        <td>96/219202</td>
+                                        <td>1396/05/28</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>بهره برداری</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>شهریار</td>
+                                        <td>بهینه سازان</td>
+                                        <td>97/02/31</td>
+                                        <td>96/267634</td>
+                                        <td>1396/12/02</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>بهره برداری</td>
+                                        <td>15</td>
+                                        <td>سه فاز</td>
+                                        <td>پردیس</td>
+                                        <td>بهینه سازان</td>
+                                        <td>97/02/29</td>
+                                        <td>96/230939</td>
+                                        <td>1396/07/17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>بهره برداری</td>
+                                        <td>15</td>
+                                        <td>سه فاز</td>
+                                        <td>پردیس</td>
+                                        <td>بهینه سازان</td>
+                                        <td>97/02/29</td>
+                                        <td>96/230939</td>
+                                        <td>1396/07/17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>بهره برداری</td>
+                                        <td>14</td>
+                                        <td>سه فاز</td>
+                                        <td>پردیس</td>
+                                        <td>بهینه سازان</td>
+                                        <td>97/03/23</td>
+                                        <td>6150</td>
+                                        <td>1396/03/07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>بهره برداری</td>
+                                        <td>100</td>
+                                        <td>سه فاز</td>
+                                        <td>اندیشه</td>
+                                        <td>بهینه سازان</td>
+                                        <td>97/05/17</td>
+                                        <td>96/259404</td>
+                                        <td>1396/10/30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>بهره برداری</td>
+                                        <td>16</td>
+                                        <td>سه فاز</td>
+                                        <td>خاوران</td>
+                                        <td>بهینه سازان</td>
+                                        <td>97/06/05</td>
+                                        <td>96/270/205</td>
+                                        <td>1396/12/12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>بهره برداری</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>دماوند</td>
+                                        <td>افزار آزما</td>
+                                        <td>97/07/28</td>
+                                        <td>18541</td>
+                                        <td>1397/06/21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>بهره برداری</td>
+                                        <td>20</td>
+                                        <td>سه فاز</td>
+                                        <td>گلستان</td>
+                                        <td>بهینه سازان</td>
+                                        <td>97/08/14</td>
+                                        <td>17551</td>
+                                        <td>1397/05/13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>بهره برداری</td>
+                                        <td>15</td>
+                                        <td>سه فاز</td>
+                                        <td>رباط کریم (پرند)</td>
+                                        <td>بهینه سازان</td>
+                                        <td>97/09/27</td>
+                                        <td>96/160/606</td>
+                                        <td>1396/03/30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>بهره برداری</td>
+                                        <td>20</td>
+                                        <td>سه فاز</td>
+                                        <td>ورامین</td>
+                                        <td>بهینه سازان</td>
+                                        <td>97/11/10</td>
+                                        <td>18265</td>
+                                        <td>1397/05/13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>بهره برداری</td>
+                                        <td>20</td>
+                                        <td>سه فاز</td>
+                                        <td>ری</td>
+                                        <td>بهینه سازان</td>
+                                        <td>97/12/27</td>
+                                        <td>96/259810</td>
+                                        <td>1396/11/01</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>بهره برداری</td>
+                                        <td>1</td>
+                                        <td>تکفاز</td>
+                                        <td>شهریار</td>
+                                        <td>افزار آزما</td>
+                                        <td>98/01/21</td>
+                                        <td>18022</td>
+                                        <td>1397/05/15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td>بهره برداری</td>
+                                        <td>16</td>
+                                        <td>سه فاز</td>
+                                        <td>شهریار</td>
+                                        <td>بهینه سازان</td>
+                                        <td>98/02/14</td>
+                                        <td>21873</td>
+                                        <td>1397/11/15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td>بهره برداری</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>ری</td>
+                                        <td>افزار آزما</td>
+                                        <td>98/02/02</td>
+                                        <td>18812</td>
+                                        <td>1397/10/23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>بهره برداری</td>
+                                        <td>10</td>
+                                        <td>سه فاز</td>
+                                        <td>رودهن</td>
+                                        <td>بهینه سازان</td>
+                                        <td>97/09/26</td>
+                                        <td>17778</td>
+                                        <td>1396/12/22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td>بهره برداری</td>
+                                        <td>5</td>
+                                        <td>سه فاز</td>
+                                        <td>دماوند</td>
+                                        <td>بهینه سازان</td>
+                                        <td>۱۳۹۷/۱۱/۳۰</td>
+                                        <td>16192</td>
+                                        <td>1397/10/03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td>بهره برداری</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>دماوند</td>
+                                        <td>توس فیوز</td>
+                                        <td>98/08/25</td>
+                                        <td>17603</td>
+                                        <td>1398/03/25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>28</td>
+                                        <td>بهره برداری</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>ورامین</td>
+                                        <td>افزار آزما</td>
+                                        <td>98/10/30</td>
+                                        <td>6213872</td>
+                                        <td>1398/10/08</td>
+                                    </tr>
+                                    <tr>
+                                        <td>29</td>
+                                        <td>بهره برداری</td>
+                                        <td>100</td>
+                                        <td>سه فاز</td>
+                                        <td>پاکدشت</td>
+                                        <td>توس فیوز</td>
+                                        <td>98/12/12</td>
+                                        <td>23715</td>
+                                        <td>1398/05/07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td>بهره برداری</td>
+                                        <td>20</td>
+                                        <td>سه فاز</td>
+                                        <td>ری</td>
+                                        <td>بهینه سازان</td>
+                                        <td>99/09/12</td>
+                                        <td>96/251834</td>
+                                        <td>1396/10/03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>31</td>
+                                        <td>بهره برداری</td>
+                                        <td>10</td>
+                                        <td>سه فاز</td>
+                                        <td>رودهن</td>
+                                        <td>بهینه سازان</td>
+                                        <td>99/11/08</td>
+                                        <td>57800</td>
+                                        <td>1399/08/10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>32</td>
+                                        <td>بهره برداری</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>ملارد</td>
+                                        <td>افزار آزما</td>
+                                        <td>1400/05/20</td>
+                                        <td>413999</td>
+                                        <td>1399/02/31</td>
+                                    </tr>
+                                    <tr>
+                                        <td>33</td>
+                                        <td>بهره برداری</td>
+                                        <td>100</td>
+                                        <td>سه فاز</td>
+                                        <td>پرند</td>
+                                        <td>افزار آزما</td>
+                                        <td>1400/06/03</td>
+                                        <td>7033223</td>
+                                        <td>1399/12/16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>34</td>
+                                        <td>بهره برداری</td>
+                                        <td>10</td>
+                                        <td>سه فاز</td>
+                                        <td>رودهن</td>
+                                        <td>بهینه سازان</td>
+                                        <td>1400/07/19</td>
+                                        <td>98/6824855</td>
+                                        <td>1398/01/15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>35</td>
+                                        <td>شروع احداث</td>
+                                        <td>5</td>
+                                        <td></td>
+                                        <td>رودهن</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>420068141/5</td>
+                                        <td>1400/02/19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>شروع احداث</td>
+                                        <td>5</td>
+                                        <td>سه فاز</td>
+                                        <td>لواسان</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>161299</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>37</td>
+                                        <td>شروع احداث</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>اسلامشهر</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>6674178</td>
+                                        <td>1399/05/07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>38</td>
+                                        <td>شروع احداث</td>
+                                        <td>19</td>
+                                        <td>سه فاز</td>
+                                        <td>لواسان</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>96/262207</td>
+                                        <td>1396/11/10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>39</td>
+                                        <td>شروع احداث</td>
+                                        <td>11</td>
+                                        <td>سه فاز</td>
+                                        <td>شهریار</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>96/255769</td>
+                                        <td>1396/10/17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td>شروع احداث</td>
+                                        <td>20</td>
+                                        <td>سه فاز</td>
+                                        <td>ری</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>96/24718</td>
+                                        <td>96/09/19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>41</td>
+                                        <td>بهره برداری</td>
+                                        <td>40</td>
+                                        <td>سه فاز</td>
+                                        <td>ری</td>
+                                        <td>بهینه سازان</td>
+                                        <td>1400.08.29</td>
+                                        <td>543715</td>
+                                        <td>1399/12/02</td>
+                                    </tr>
+                                    <tr>
+                                        <td>42</td>
+                                        <td>شروع احداث</td>
+                                        <td>8</td>
+                                        <td>سه فاز</td>
+                                        <td>پردیس</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>96/248599</td>
+                                        <td>1396/09/22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>43</td>
+                                        <td>بازدید اولیه</td>
+                                        <td>20</td>
+                                        <td>سه فاز</td>
+                                        <td>شهرقدس</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>....</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>44</td>
+                                        <td>بهره برداری</td>
+                                        <td>60</td>
+                                        <td>سه فاز</td>
+                                        <td>پاکدشت</td>
+                                        <td>توس فیوز</td>
+                                        <td>1401/09/15</td>
+                                        <td>7274233</td>
+                                        <td>1400/10/22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>45</td>
+                                        <td>شروع احداث</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>فیروزکوه</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>7151441</td>
+                                        <td>1400/09/29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>46</td>
+                                        <td>شروع احداث</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>فیروزکوه</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>1606673</td>
+                                        <td>1400/09/29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>47</td>
+                                        <td>بهره برداری</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>لواسان</td>
+                                        <td>بهینه سازان </td>
+                                        <td>1400/12/19</td>
+                                        <td>2804754</td>
+                                        <td>1400/06/01</td>
+                                    </tr>
+                                    <tr>
+                                        <td>48</td>
+                                        <td>شروع احداث</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>لواسان</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>1424190</td>
+                                        <td>1397/07/07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>49</td>
+                                        <td>بازدید اولیه</td>
+                                        <td>...</td>
+                                        <td>سه فاز</td>
+                                        <td>پیشوا</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50</td>
+                                        <td>بررسی فنی</td>
+                                        <td>5</td>
+                                        <td>سه فاز</td>
+                                        <td>دماوند</td>
+                                        <td>بهینه سازان</td>
+                                        <td>...</td>
+                                        <td>30150371</td>
+                                        <td>1400/08/15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>51</td>
+                                        <td>بهره برداری</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>رباط کریم </td>
+                                        <td>افزار آزما</td>
+                                        <td>1401/05/22</td>
+                                        <td>2198902</td>
+                                        <td>1400/04/02</td>
+                                    </tr>
+                                    <tr>
+                                        <td>52</td>
+                                        <td>بازدید اولیه</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>کهریزک</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>53</td>
+                                        <td>شروع احداث</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>لواسان(رودبار قصران)</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>18812</td>
+                                        <td>1397/10/23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>54</td>
+                                        <td>شروع احداث</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>لواسان(رودبار قصران)</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>18812</td>
+                                        <td>1397/10/24</td>
+                                    </tr>
+                                    <tr>
+                                        <td>55</td>
+                                        <td>شروع احداث</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>لواسان(رودبار قصران)</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>395682</td>
+                                        <td>1397/10/23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>56</td>
+                                        <td>شروع احداث</td>
+                                        <td>10</td>
+                                        <td>تکفاز</td>
+                                        <td>فیروزکوه</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>6546667</td>
+                                        <td>1398/10/07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>57</td>
+                                        <td>بهره برداری</td>
+                                        <td>6</td>
+                                        <td>تکفاز</td>
+                                        <td>لواسان</td>
+                                        <td>افزار آزما</td>
+                                        <td>1400.08.23</td>
+                                        <td>6536484</td>
+                                        <td>1399/08/10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>58</td>
+                                        <td>شروع احداث</td>
+                                        <td>10</td>
+                                        <td>سه فاز</td>
+                                        <td>رباط کریم</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>16894</td>
+                                        <td>1397/06/24</td>
+                                    </tr>
+                                    <tr>
+                                        <td>59</td>
+                                        <td>بازدید اولیه</td>
+                                        <td>15</td>
+                                        <td>سه فاز</td>
+                                        <td>خاوران</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>60</td>
+                                        <td>بررسی فنی</td>
+                                        <td>20</td>
+                                        <td>سه فاز</td>
+                                        <td>دماوند</td>
+                                        <td>بهینه سازان</td>
+                                        <td>...</td>
+                                        <td>51924</td>
+                                        <td>1401/04/28</td>
+                                    </tr>
+                                    <tr>
+                                        <td>61</td>
+                                        <td>بستن قرارداد </td>
+                                        <td>60</td>
+                                        <td>سه فاز</td>
+                                        <td>کهریزک</td>
+                                        <td></td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>62</td>
+                                        <td>بستن قرارداد </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>کهریزک</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>63</td>
+                                        <td>بستن قرارداد </td>
+                                        <td>50</td>
+                                        <td>سه فاز ولتاژ اولیه</td>
+                                        <td>پیشوا</td>
+                                        <td></td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>64</td>
+                                        <td>شروع احداث</td>
+                                        <td>5</td>
+                                        <td>تکفاز</td>
+                                        <td>پیشوا</td>
+                                        <td></td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>65</td>
+                                        <td>بستن قرارداد </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>ورامین</td>
+                                        <td></td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                        <td>...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p class="UpdateLabel">تاریخ به روز رسانی 1402/02/25 </p>
+        </div>
+
+    </div>

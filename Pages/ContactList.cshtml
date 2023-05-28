@@ -1,0 +1,37 @@
+﻿@page
+@model ContactCenter.Pages.ContactListModel
+@{
+}
+
+ <div class="container-fluid MainBase">
+        <div class="container" style="margin-top:10px;">
+            <table id="TableList" class="table table-striped" style="width:100%">
+                <thead>
+                    <tr>
+                        <th class="col col-sm-2">معاونت / دفتر</th>
+                        <th class="col col-sm-3">نام خانوادگی</th>
+                        <th class="col col-sm-3">سمت سازمانی</th>
+                        <th class="col col-sm-1">شماره داخلی</th>
+                        <th class="col col-sm-2">شماره مستقیم</th>
+                        <th class="col col-sm-1">شماره ساختمان</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var Contact in Model.listContact)
+                    {
+                    <tr>
+                        <td>@Contact.Id</td>
+                        <td>@Contact.PersonName</td>
+                        <td>@Contact.PositionName</td>
+                        <td>@Contact.Phone1</td>
+                        <td>@Contact.Phone2</td>
+                        <td>@Contact.Address</td>
+                    </tr>
+                    }
+                </tbody>
+                
+            </table>
+            <p class="UpdateLabel">تاریخ به روز رسانی 1402/02/25 </p>
+        </div>
+
+    </div>
