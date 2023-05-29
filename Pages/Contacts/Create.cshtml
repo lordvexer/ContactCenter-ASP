@@ -1,0 +1,59 @@
+@page
+@model ContactCenter.Pages.Contacts.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Contact</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Contact.PersonName" class="control-label"></label>
+                <input asp-for="Contact.PersonName" class="form-control" />
+                <span asp-validation-for="Contact.PersonName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contact.PositionName" class="control-label"></label>
+                <input asp-for="Contact.PositionName" class="form-control" />
+                <span asp-validation-for="Contact.PositionName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contact.PostOrg" class="control-label"></label>
+                <input asp-for="Contact.PostOrg" class="form-control" />
+                <span asp-validation-for="Contact.PostOrg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contact.Phone1" class="control-label"></label>
+                <input asp-for="Contact.Phone1" class="form-control" />
+                <span asp-validation-for="Contact.Phone1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contact.Phone2" class="control-label"></label>
+                <input asp-for="Contact.Phone2" class="form-control" />
+                <span asp-validation-for="Contact.Phone2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contact.Address" class="control-label"></label>
+                <input asp-for="Contact.Address" class="form-control" />
+                <span asp-validation-for="Contact.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

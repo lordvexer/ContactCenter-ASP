@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Data.SqlClient;
 
 
-namespace ContactCenter.Pages
+namespace ContactCenterAdmin.Pages
 {
     public class ContactListModel : PageModel
     {

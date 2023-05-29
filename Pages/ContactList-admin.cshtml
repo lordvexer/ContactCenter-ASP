@@ -5,16 +5,19 @@
 
  <div class="container-fluid MainBase">
         <div class="container" style="margin-top:10px;">
+            <div> <a class="btn btn-primary btn-sm" href="/ContactList-admin/Create">افزودن مخاطب</a> 
+</div>
             <table id="TableList" class="table table-striped" style="width:100%">
                 <thead>
                     <tr>
                         <th class="col col-sm-1">ردیف</th>
-                        <th class="col col-sm-3">نام خانوادگی</th>
+                        <th class="col col-sm-2">نام خانوادگی</th>
                         <th class="col col-sm-2">معاونت / دفتر</th>
                         <th class="col col-sm-2">سمت سازمانی</th>
                         <th class="col col-sm-1">شماره داخلی</th>
-                        <th class="col col-sm-2">شماره مستقیم</th>
+                        <th class="col col-sm-1">شماره مستقیم</th>
                         <th class="col col-sm-1">شماره ساختمان</th>
+                        <th class="col col-sm-2">اصلاح</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -28,12 +31,14 @@
                         <td>@Contact.Phone1</td>
                         <td>@Contact.Phone2</td>
                         <td>@Contact.Address</td>
+                        <td> <a class="btn btn-primary btn-sm" href="/ContactList-admin/Edit?id=@Contact.ID">ویرایش
+                         <a class="btn btn-primary btn-sm" href="/ContactList-admin/Delete?id=@Contact.ID">حذف</td>
                     </tr>
                     }
                 </tbody>
                 
             </table>
-            <p class="UpdateLabel">تاریخ به روز رسانی 1402/02/25 </p>
+            <p class="UpdateLabel">تاریخ به روز رسانی 1402/03/25 </p>
         </div>
 
     </div>
