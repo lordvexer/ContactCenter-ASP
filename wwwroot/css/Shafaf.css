@@ -11,7 +11,10 @@ body {
     font-family: 'iranyekan', tahoma, Arial;
     -webkit-font-smoothing: antialiased;
 }
-
+.iframeTavanir {
+    width: 100%;
+    height: 500px;
+}
 .container-fluid {
     max-width: 1200px;
 }
